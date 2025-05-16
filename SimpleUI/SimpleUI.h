@@ -9,4 +9,8 @@
 
 @interface SimpleUI : NSObject
 
+FOUNDATION_EXPORT double SimpleUIVersionNumber;
+
+FOUNDATION_EXPORT const unsigned char SimpleUIVersionString[];
+
 @end
