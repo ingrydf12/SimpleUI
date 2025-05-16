@@ -10,9 +10,22 @@
 		B2990D992D71FCE4004A61EA /* libSimpleUI.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSimpleUI.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B2F4EFED2DD780B1009BE1AF /* Exceptions for "SimpleUI" folder in "SimpleUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Components/SimpleUI-Bridging-Header.h",
+			);
+			target = B2990D982D71FCE4004A61EA /* SimpleUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		B2990D9B2D71FCE4004A61EA /* SimpleUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B2F4EFED2DD780B1009BE1AF /* Exceptions for "SimpleUI" folder in "SimpleUI" target */,
+			);
 			path = SimpleUI;
 			sourceTree = "<group>";
 		};
@@ -91,6 +104,7 @@
 				TargetAttributes = {
 					B2990D982D71FCE4004A61EA = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -242,6 +256,7 @@
 		B2990DA32D71FCE4004A61EA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C97S2SR7J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -253,6 +268,9 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleUI/Components/SimpleUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -260,6 +278,7 @@
 		B2990DA42D71FCE4004A61EA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9C97S2SR7J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -271,6 +290,8 @@
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleUI/Components/SimpleUI-Bridging-Header.h";
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
